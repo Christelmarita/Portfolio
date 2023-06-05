@@ -217,7 +217,7 @@ a {
 .hero-text {
     position: absolute;
     top: 20%;
-    max-width: 700px;
+    max-width: 520px;
     z-index: 1;
 }
 
