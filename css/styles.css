@@ -49,11 +49,21 @@ p {
     font-size: 18px;
 }
 
+.nav-menu a:hover,
+.wrapper a:hover,
+footer a:hover,
+button:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
 button {
     font-size: 20px;
     padding: 10px 40px;
     margin-top: 4%;
-
+    border-radius: 10px;
+    border-color: var(--secondary);
+    border-style: double;
 }
 
 .wrapper {
