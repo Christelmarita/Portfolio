@@ -66,4 +66,8 @@
         left: 10%;
         transform: translateX(-10%);
     }
+
+    .hero {
+        margin-top: 10px;
+    }
 }
