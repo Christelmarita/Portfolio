@@ -89,7 +89,7 @@ button {
     display: inline-flex;
     background-color: var(--third);
     border-radius: 5px;
-    border: 2px;
+    border: 0.5px;
     border-style: solid;
     border-color: var(--third);
 }
