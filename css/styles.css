@@ -21,7 +21,7 @@ h4,
 button,
 .card-text a {
     font-family: var(--text-main);
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 400;
     color: var(--primary);
 }
@@ -88,12 +88,16 @@ button {
     height: 300px;
     display: inline-flex;
     background-color: var(--third);
-
+    border-radius: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: var(--third);
 }
 
 .card img {
     object-fit: cover;
     width: 50%;
+    border-radius: 5px;
 }
 
 .card-text {
@@ -130,7 +134,7 @@ button {
 }
 
 .logo {
-    max-height: 45px;
+    max-height: 50px;
     max-width: 300px;
 }
 
@@ -240,7 +244,16 @@ a {
 }
 
 .abt-content img {
-    max-width: 300px;
+    max-width: 250px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    border-radius: 50px 10px 50px 10px;
+}
+
+.abt-content img.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* FOOTER */
