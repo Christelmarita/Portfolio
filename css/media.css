@@ -21,8 +21,8 @@
 
     .hamburger {
         display: block;
-        position: fixed;
-        right: 10%;
+        position: absolute;
+        right: 5%;
         top: 29px;
     }
     
@@ -63,7 +63,6 @@
     .navbar-logo {
         flex-grow: 0;
         position: absolute;
-        left: 10%;
     }
 
     .hero {
@@ -71,9 +70,10 @@
         padding: 2% 5%;
     }
 
-    .blob {
-        right: -25%; 
-     } 
+    .navbar {
+        padding: 0 5%;
+        max-width: 100%;
+    }
 
      .wrapper {
         margin: auto 5%;
@@ -104,10 +104,6 @@
     
     h1 {
         font-size: 40px;
-    }
-
-    .blob {
-        right: -45%;
     }
 }
 

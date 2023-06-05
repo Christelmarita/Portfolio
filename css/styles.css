@@ -233,6 +233,7 @@ a {
     z-index: 0;
     right: 10%; 
     top: 16%;
+    overflow: hidden;
 } 
 
 .abt-content {
