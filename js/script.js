@@ -30,3 +30,32 @@ function scrollFadeIn() {
 
 scrollFadeIn();
 
+// IMAGE MODAL
+
+document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("myModal");
+    var img = document.getElementById("modalImg");
+  
+    var images = document.querySelectorAll(".card img");
+  
+    images.forEach(function (image) {
+      image.addEventListener("click", function () {
+        if (window.innerWidth > 700) {
+          modal.style.display = "block";
+          img.src = this.src;
+        }
+      });
+    });
+  
+    var closeBtn = document.getElementsByClassName("close")[0];
+    modal.addEventListener("click", function (event) {
+      if (
+        event.target === modal ||
+        event.target === closeBtn ||
+        window.innerWidth <= 700
+      ) {
+        modal.style.display = "none";
+      }
+    });
+  });
+  

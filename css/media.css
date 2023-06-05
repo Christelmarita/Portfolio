@@ -78,6 +78,10 @@
      .wrapper {
         margin: auto 5%;
     }
+
+    .card img {
+        cursor: unset;
+    }
 }
 
 @media (max-width: 658px) {
