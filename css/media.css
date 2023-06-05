@@ -72,7 +72,7 @@
     }
 
     .blob {
-        right: -35%; 
+        right: -25%; 
      } 
 
      .wrapper {
@@ -104,6 +104,10 @@
     
     h1 {
         font-size: 40px;
+    }
+
+    .blob {
+        right: -45%;
     }
 }
 
