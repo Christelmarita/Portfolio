@@ -209,6 +209,7 @@ a {
     position: absolute;
     top: 20%;
     max-width: 700px;
+    z-index: 1;
 }
 
 .separator {
@@ -216,6 +217,13 @@ a {
     background-color: var(--primary);
     margin: 30px 10%;
   }
+
+ .blob {
+    position: absolute;
+    z-index: 0;
+    right: 10%; 
+    top: 16%;
+ } 
 
 /* FOOTER */
 

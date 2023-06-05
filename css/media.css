@@ -70,4 +70,8 @@
     .hero {
         margin-top: 10px;
     }
+
+    .blob {
+        right: -30%; 
+     } 
 }
