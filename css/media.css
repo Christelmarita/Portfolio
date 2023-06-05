@@ -75,3 +75,17 @@
         right: -30%; 
      } 
 }
+
+@media (max-width: 658px) {
+
+    .abt-content {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .image-wrapper {
+        text-align: center;
+        margin-bottom: 40px;
+        background-color: var(--secondary);
+    }
+}
