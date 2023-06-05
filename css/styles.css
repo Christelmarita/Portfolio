@@ -1,5 +1,10 @@
 /* GLOBAL */
 
+@font-face {
+    font-family: 'Laisha';
+    src: url('/fonts/Laisha.ttf') format('truetype');
+}
+
 body {
     color: var(--font);
     background-color: var(--background);
@@ -87,7 +92,7 @@ button {
 }
 
 .card-text {
-    padding: 2%;
+    padding: 4%;
     width: 50%;
 }
 
@@ -95,7 +100,7 @@ button {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    padding: inherit;
+    padding: revert;
 }
 
 /* NAV */
@@ -193,7 +198,7 @@ a {
     position: relative;
     background-position-y: center;
     background-position-x: center;
-    padding: 0px 0px 0px 10%;
+    padding: 2% 10%;
     margin-top: 85px; 
     display: flex;
 }
