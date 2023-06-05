@@ -1,0 +1,69 @@
+@media (max-width: 1150px) {
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .card img,
+    .card-text {
+        height: 50%;
+        width: fit-content;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        right: 10%;
+        top: 29px;
+    }
+    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 72px;
+        background: var(--background);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: initial;
+        display: none;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 20px 10px;
+    }
+
+    .navbar-logo {
+        flex-grow: 0;
+        position: absolute;
+        left: 10%;
+        transform: translateX(-10%);
+    }
+}

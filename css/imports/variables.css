@@ -1,0 +1,12 @@
+:root {
+    /* FONT */
+    --text-main:"laisha";
+    --text-other:"helvetica neue";
+
+    /* COLORS */
+    --background: #FFF4F8;
+    --primary: #5D6F3E;
+    --secondary: #FEBD54;
+    --font: #232F19;
+    --error: rgb(207, 7, 7);
+}
