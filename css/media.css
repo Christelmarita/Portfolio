@@ -82,6 +82,16 @@
     .card img {
         cursor: unset;
     }
+
+    .blob {
+        right: 0;
+        top: 45%;
+    }
+
+    #blobSvg {
+        right: -175px;
+        position: relative;
+    }
 }
 
 @media (max-width: 658px) {
