@@ -145,6 +145,7 @@ a {
     color: white;
     padding: 10px;
 }
+
   
   
 .nav-menu ul {
@@ -296,8 +297,9 @@ footer {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 98%;
-    max-height: 98%;
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 20px;
 }
   
 .close {
