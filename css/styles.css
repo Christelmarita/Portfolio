@@ -60,14 +60,6 @@ h4 {
     font-size: 18px;
 }
 
-.nav-menu a:hover,
-.wrapper a:hover,
-footer a:hover,
-button:hover {
-    background-color: var(--primary);
-    color: var(--background);
-}
-
 button {
     font-size: 20px;
     padding: 10px 40px;
@@ -98,7 +90,6 @@ button {
     object-fit: cover;
     width: 50%;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .card-text {
@@ -300,16 +291,16 @@ footer {
     overflow: auto;
     background-color: rgba(39, 37, 25, 0.7);
     backdrop-filter: blur(1px)
-  }
+}
   
-  .modal-content {
+.modal-content {
     margin: auto;
     display: block;
-    max-width: 80%;
-    max-height: 80%;
-  }
+    max-width: 98%;
+    max-height: 98%;
+}
   
-  .close {
+.close {
     color: var(--background);
     position: absolute;
     top: 15px;
@@ -317,12 +308,29 @@ footer {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-    cursor: pointer;
-  }
+}
+
+/* HOVER */
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: var(--secondary);
     text-decoration: none;
+}
+
+a,
+button,
+.card img,
+.close,
+.close:hover,
+.close:focus {
     cursor: pointer;
-  }
+}
+
+.nav-menu a:hover,
+.wrapper a:hover,
+footer a:hover,
+button:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
