@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       image.addEventListener("click", function () {
         modal.style.display = "block";
         img.src = this.src;
+        img.alt = this.alt;
       });
     });
   
