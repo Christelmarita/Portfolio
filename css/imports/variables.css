@@ -5,9 +5,9 @@
 
     /* COLORS */
     --background: #FFF4F8;
-    --primary: #5D6F3E;
+    --primary: #4e5c36;
     --secondary: #FEBD54;
-    --third: rgba(227, 192, 178, 0.24);
+    --third: #fff;
     --font: #232F19;
     --error: rgb(207, 7, 7);
 }

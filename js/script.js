@@ -1,12 +1,12 @@
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", () => {
-    console.log("Hamburger clicked!");
+hamburger.onclick = function () {
     hamburger.classList.toggle("active");
+    const navMenu = document.querySelector(".nav-menu");
     navMenu.classList.toggle("active");
+    navMenu.classList.toggle("slide-in");
     document.querySelector(".dark-underlay").classList.toggle("show-underlay");
-  });
+  };
 
 // SCROLL EFFECT ON ABOUT IMAGE
 
@@ -18,7 +18,7 @@ function scrollFadeIn() {
     function useScroll() {
         var scrollTop = window.scrollY;
 
-        if (scrollTop + (windowHeight * 0.8) > breakElementOffset) {
+        if (scrollTop + (windowHeight * 0.9) > breakElementOffset) {
             breakElement.classList.add('visible');
         } else {
             breakElement.classList.remove('visible');
@@ -76,4 +76,3 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   });
-  

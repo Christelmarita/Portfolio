@@ -29,7 +29,8 @@ button,
 h3,
 a,
 p,
-li {
+li,
+label {
     font-family: var(--text-other);
     font-weight: 300;
 }
@@ -42,15 +43,15 @@ li {
     margin-top: 0px;
 }
 
-h2 {
-    font-size: 28px;
+h2,
+i {
+    font-size: 32px;
     margin-bottom: 0px;
-    
 }
 
 h3 {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 a,
@@ -64,9 +65,20 @@ button {
     font-size: 20px;
     padding: 10px 40px;
     margin-top: 4%;
-    border-radius: 10px;
     border-color: var(--secondary);
-    border-style: double;
+    border-style: solid;
+    border: 0.5px;
+}
+
+.wrapper i {
+    align-items: baseline;
+    color: var(--primary);
+    display: inline-flex;
+}
+
+i > p {
+    color: var(--font);
+    margin-left: 5px;
 }
 
 .wrapper {
@@ -80,20 +92,21 @@ button {
     height: 300px;
     display: inline-flex;
     background-color: var(--third);
-    border-radius: 5px;
-    border: 0.5px;
-    border-style: solid;
-    border-color: var(--third);
+    box-shadow: 23px 23px 0px -14px var(--primary);
+    transition: box-shadow 0.1s ease;
+}
+
+.card:hover {
+    box-shadow: 23px 23px 0px -14px var(--secondary);
 }
 
 .card img {
     object-fit: cover;
     width: 50%;
-    border-radius: 5px;
 }
 
 .card-text {
-    padding: 4%;
+    padding: 35px;
     width: 50%;
 }
 
@@ -102,6 +115,7 @@ button {
     justify-content: flex-end;
     gap: 20px;
     padding: revert;
+    margin: 5% 0;
 }
 
 /* NAV */
@@ -134,6 +148,7 @@ a {
     text-decoration: none;
     display: block;
     color: var(--font);
+    padding: 15px 5px;
 }
 
 .active-link {
@@ -145,8 +160,6 @@ a {
     color: white;
     padding: 10px;
 }
-
-  
   
 .nav-menu ul {
     display: flex;
@@ -228,8 +241,36 @@ a {
     overflow: hidden;
 } 
 
+.blob:hover path {
+    animation: vibration 0.2s ease-in-out infinite;
+}
+
+@keyframes vibration {
+    0% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    50% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    100% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+}
+
 .abt-content {
     overflow: hidden;
+}
+
+
+
+.skills-tools {
+    display: inline-flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tools {
+    margin-top: 20px;
 }
 
 .image-wrapper {
@@ -242,7 +283,7 @@ a {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    border-radius: 50px 10px 50px 10px;
+    border-radius: 50px 0px 50px 0px;
 }
 
 .abt-content img.visible {
@@ -250,31 +291,18 @@ a {
     transform: translateY(0);
 }
 
+.abt-wrapper {
+    margin-bottom: 50px;
+}
+
 /* FOOTER */
 
 
 footer {
-    background-color: var(--background);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-top: 5%;
-    width: 100%;
     bottom: 0;
-    max-height: 260px;
-    flex: auto;
-    padding: 0 0 60px 0;
-}
-
-.footer-links a:not(:first-child) {
-    margin-left: 50px;
-  }
-
-.footer-links {
-    display: inline-flex;
-    justify-content: space-between;
-    margin-top: 5%;
+    padding: 30px 0;
 }
 
 /* IMAGE MODAL */
@@ -335,4 +363,30 @@ footer a:hover,
 button:hover {
     background-color: var(--primary);
     color: var(--background);
+    box-shadow: 8px 8px 0px 0px var(--font);
+    transform: translateY(-8px);
+}
+
+.slide-in {
+    animation: slideInMenu 0.5s forwards;
+    transform: translateY(-72px);
+  }
+  
+  @keyframes slideInMenu {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+#contact a {
+    width: fit-content;
+    margin: 10px 0;
+    font-family: var(--text-main);
+}
+
+#contact p {
+    display: block;
 }
