@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll(".nav-link");
     const button = document.querySelector("button");
+    const hamburger = document.querySelector(".hamburger"); // Add this line
+    const navMenu = document.querySelector(".nav-menu"); // Add this line
   
     function scrollToTarget(target) {
       const offset = document.querySelector(".navbar").offsetHeight;
@@ -86,4 +88,12 @@ document.addEventListener("DOMContentLoaded", function() {
       const target = this.getAttribute("data-target");
       scrollToTarget(target);
     });
+  
+    window.addEventListener("scroll", function() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+      document.querySelector(".dark-underlay").classList.remove("show-underlay");
+    });
   });
+  
+  
