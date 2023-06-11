@@ -76,9 +76,10 @@ button {
     display: inline-flex;
 }
 
-i > p {
+.icon-text p {
     color: var(--font);
     margin-left: 5px;
+    display: inline-block;
 }
 
 .wrapper {
