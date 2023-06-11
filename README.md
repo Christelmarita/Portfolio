@@ -1,4 +1,5 @@
 # Portfolio
+
 ![image]()
 
 This is my portfolio.
@@ -13,16 +14,6 @@ It should list 3 of my projecs as cards, with screenshots of my pages and links 
 - HTML
 - CSS
 - Javascript
-
-## Getting Started
-
-### Installing
-
-1. Clone the repo:
-
-```bash
-git clone 
-```
 
 ## Contributing
 

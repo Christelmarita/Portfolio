@@ -57,22 +57,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll(".nav-link");
+    const button = document.querySelector("button");
+  
+    function scrollToTarget(target) {
+      const offset = document.querySelector(".navbar").offsetHeight;
+      const targetPosition = document.querySelector(target).offsetTop - offset;
+  
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
+  
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+      document.querySelector(".dark-underlay").classList.remove("show-underlay");
+    }
+  
     for (const link of navLinks) {
       link.addEventListener("click", function(event) {
         event.preventDefault();
         const target = this.getAttribute("href");
-        const offset = document.querySelector(".navbar").offsetHeight;
-        const targetPosition = document.querySelector(target).offsetTop - offset;
-  
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth"
-        });
-
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        document.querySelector(".dark-underlay").classList.remove("show-underlay");
-
+        scrollToTarget(target);
       });
     }
+  
+    button.addEventListener("click", function(event) {
+      event.preventDefault();
+      const target = this.getAttribute("data-target");
+      scrollToTarget(target);
+    });
   });
